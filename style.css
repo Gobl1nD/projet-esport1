@@ -1,0 +1,87 @@
+/* Importation des polices Google */
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+/* Importation des fichiers de composants */
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+
+/* Règles de style générales pour les polices et les couleurs */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: unset;
+  align-items: left;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px auto;
+  background-color: #c0c0c0;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 10%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  max-width: 50%;
+  margin: 100 auto;
+}
+
+.card {
+  flex-basis: 450px;
+  flex-grow: 1;
+  margin: 40px;
+}
+
+/* Règles de media queries pour la réactivité */
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .card {
+    flex-basis: auto;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 10px;
+    flex-basis: 45px;
+    margin: 5px;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+  }
+}
